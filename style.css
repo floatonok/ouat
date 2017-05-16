@@ -114,6 +114,7 @@ html {
 body {
   font-family: 'PT Serif', serif;
   font-size: 10px;
+	font-weight: 400;
   letter-spacing: 0.075em;
   line-height: 282%;
   font-style: italic;
@@ -209,7 +210,7 @@ span:hover:after {
 }
 
 .font-bold {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .underline {
