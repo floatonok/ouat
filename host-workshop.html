@@ -64,7 +64,7 @@
 
   <div class="page-title helper-outline">
     <div class="superscript">03</div>
-    <div>.</div>
+    <div class="dot">.</div>
     <div><h1>Host - Workshop</h1></div>
   </div>
 
@@ -93,7 +93,7 @@
       return (n < 10) ? ("0" + n) : n;
     }
 
-    $('#counter').append(pad(index + 1) + ' / ' + pad(hostWorkshop.length))
+    $('#counter').append('<p class="underline">' + pad(index + 1) + '&nbsp;</p>  / ' + pad(hostWorkshop.length))
 
     function nextImage () {
       if (index < hostWorkshop.length - 1) {
@@ -103,7 +103,7 @@
       }
       $('#workshop-background').css('background-image', 'url(' + hostWorkshop[index] + ')' );
       $('#counter').empty()
-      $('#counter').append(pad(index + 1) + ' / ' + pad(hostWorkshop.length))
+      $('#counter').append('<p class="underline">' + pad(index + 1) + '&nbsp;</p>  / ' + pad(hostWorkshop.length))
     }
 
     function previousImage () {
@@ -114,7 +114,7 @@
       }
       $('#workshop-background').css('background-image', 'url(' + hostWorkshop[index] + ')' );
       $('#counter').empty()
-      $('#counter').append(pad(index + 1) + ' / ' + pad(hostWorkshop.length))
+      $('#counter').append('<p class="underline">' + pad(index + 1) + '&nbsp;</p>  / ' + pad(hostWorkshop.length))
     }
 
     $("body").keydown(function(e) {

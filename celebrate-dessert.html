@@ -68,7 +68,7 @@
 
   <div class="page-title helper-outline">
     <div class="superscript">03</div>
-    <div>.</div>
+    <div class="dot">.</div>
     <div><h1>Celebrate - Dessert Tables</h1></div>
   </div>
 
@@ -97,7 +97,7 @@
       return (n < 10) ? ("0" + n) : n;
     }
 
-    $('#counter').append(pad(index + 1) + ' / ' + pad(celebrateDessert.length))
+    $('#counter').append('<p class="underline">' + pad(index + 1) + '&nbsp;</p> / ' + pad(celebrateDessert.length))
 
     function nextImage () {
       if (index < celebrateDessert.length - 1) {
@@ -107,7 +107,7 @@
       }
       $('#dessert-background').css('background-image', 'url(' + celebrateDessert[index] + ')' );
       $('#counter').empty()
-      $('#counter').append(pad(index + 1) + ' / ' + pad(celebrateDessert.length))
+      $('#counter').append('<p class="underline">' + pad(index + 1) + '&nbsp;</p>  / ' + pad(celebrateDessert.length))
     }
 
     function previousImage () {
@@ -118,7 +118,7 @@
       }
       $('#dessert-background').css('background-image', 'url(' + celebrateDessert[index] + ')' );
       $('#counter').empty()
-      $('#counter').append(pad(index + 1) + ' / ' + pad(celebrateDessert.length))
+      $('#counter').append('<p class="underline">' + pad(index + 1) + '&nbsp;</p>  / ' + pad(celebrateDessert.length))
     }
 
     $("body").keydown(function(e) {

@@ -68,7 +68,7 @@
 
   <div class="page-title helper-outline">
     <div class="superscript">03</div>
-    <div>.</div>
+    <div class="dot">.</div>
     <div><h1>Host - Party</h1></div>
   </div>
 
@@ -97,7 +97,7 @@
       return (n < 10) ? ("0" + n) : n;
     }
 
-    $('#counter').append(pad(index + 1) + ' / ' + pad(hostParty.length))
+    $('#counter').append('<p class="underline">' + pad(index + 1) + '&nbsp;</p>  / ' + pad(hostParty.length))
 
     function nextImage () {
       if (index < hostParty.length - 1) {
@@ -107,7 +107,7 @@
       }
       $('#party-background').css('background-image', 'url(' + hostParty[index] + ')' );
       $('#counter').empty()
-      $('#counter').append(pad(index + 1) + ' / ' + pad(hostParty.length))
+      $('#counter').append('<p class="underline">' + pad(index + 1) + '&nbsp;</p>  / ' + pad(hostParty.length))
     }
 
     function previousImage () {
@@ -118,7 +118,7 @@
       }
       $('#party-background').css('background-image', 'url(' + hostParty[index] + ')' );
       $('#counter').empty()
-      $('#counter').append(pad(index + 1) + ' / ' + pad(hostParty.length))
+      $('#counter').append('<p class="underline">' + pad(index + 1) + '&nbsp;</p>  / ' + pad(hostParty.length))
     }
 
     $("body").keydown(function(e) {
