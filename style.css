@@ -363,6 +363,10 @@ span:hover:after {
 		font-size: 14px;
 	}
 
+	.container {
+		margin: 0 30px;
+	}
+
 	h1 {
 	  font-size: 28px;
 	}
