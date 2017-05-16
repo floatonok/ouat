@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Once upon a Table</title>
+
+  <!-- Mobile Responsive View -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+  <!-- animsition.css -->
+  <link rel="stylesheet" href="./dist/css/animsition.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- animsition.js -->
+  <script src="./dist/js/animsition.min.js"></script>
+
+</head>
+
+<body class="menu-overlay">
+
+<div  class="container animsition"
+      data-animsition-in-class="fade-in-left"
+      data-animsition-in-duration="600"
+      data-animsition-out-class="fade-out-left"
+      data-animsition-out-duration="400">
+
+  <header class="main-head helper-outline">
+    <a href="index.html"><img src="Assets/OuatLogoPink.png" class="logo" /></a>
+  </header>
+
+  <nav class="social-nav helper-outline">
+    <ul>
+      <li><span><a href="http://onceuponatable.oddle.me/">Shop&nbsp;/&nbsp;</a></span></li>
+      <li><span><a href="">Fb&nbsp;/&nbsp;</a></span></li>
+      <li><span><a href="">Ig&nbsp;/&nbsp;</a></span></li>
+      <li><span><a href="">E</a></span></li>
+    </ul>
+  </nav>
+
+  <nav class="prev-next helper-outline">
+    <p><br /></p>
+  </nav>
+
+  <nav class="current-page helper-outline">
+    <p><br /></p>
+  </nav>
+
+  <aside class="menu helper-outline">
+    <span><a  href="javascript:history.back()"
+        class="underline animsition-link"
+        data-animsition-out-class="fade-out-left"
+        data-animsition-out-duration="400">Close</a></span>
+  </aside>
+
+  <div class="page-title helper-outline">
+    <div><h1><br /></h1></div>
+  </div>
+
+  <article class="content helper-outline">
+    <ul class="menu-nav nav-one">
+      <li class="helper-outline">
+        <a href="about.html">
+          <div class="superscript">01</div>
+          <div><h1><span>About</span></h1></div>
+        </a>
+      </li>
+      <li class="helper-outline">
+        <a href="http://onceuponatable.oddle.me/">
+          <div class="superscript">02</div>
+          <div><h1><span>Shop</span></h1></div>
+        </a>
+      </li>
+      <li class="helper-outline">
+        <a href="celebrate.html">
+          <div class="superscript">03</div>
+          <div><h1><span>Celebrate</span></h1></div>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="menu-nav nav-two">
+      <li class="helper-outline">
+        <a href="host.html">
+          <div class="superscript">04</div>
+          <div><h1><span>Host</span></h1></div>
+        </a>
+      </li>
+      <li class="helper-outline">
+        <a href="contact.html">
+          <div class="superscript">05</div>
+          <div><h1><span>Contact Us</span></h1></div>
+        </a>
+      </li>
+      <li class="helper-outline"></li>
+    </ul>
+  </article>
+
+  <footer class="copyright helper-outline">
+    <p>Copyright © 2017 Once Upon A Table</p>
+  </footer>
+
+</div>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'fade-in-left',
+        outClass: 'fade-out-left',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay : false,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'body',
+        transition: function(url){ window.location.href = url; }
+      });
+    });
+  </script>
+
+  <!-- JS Links -->
+  <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

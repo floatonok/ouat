@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Once upon a Table</title>
+
+  <!-- Mobile Responsive View -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height, user-scalable=yes">
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+</head>
+
+<body class="index">
+
+<div class="container">
+  <header class="main-head helper-outline">
+    <a href="index.html"><img src="Assets/OuatLogo.png" class="logo" /></a>
+  </header>
+
+  <nav class="social-nav helper-outline">
+    <ul>
+      <li><span><a href="http://onceuponatable.oddle.me/">Shop&nbsp;/&nbsp;</a></span></li>
+      <li><span><a href="">Fb&nbsp;/&nbsp;</a></span></li>
+      <li><span><a href="">Ig&nbsp;/&nbsp;</a></span></li>
+      <li><span><a href="">E</a></span></li>
+    </ul>
+  </nav>
+
+  <nav class="prev-next helper-outline">
+    <p><br /></p>
+  </nav>
+
+  <nav class="current-page helper-outline">
+    <p><br /></p>
+  </nav>
+
+  <aside class="menu helper-outline">
+    <span><a href="menu.html" class="underline">Menu</a></span>
+  </aside>
+
+  <!-- Only visible in mobile layout -->
+  <nav class="mobile-menu helper-outline">
+    <ul>
+      <li><span><a href="about.html">About Us /&nbsp;</a></span></li>
+      <li><span><a href="http://onceuponatable.oddle.me/">Shop /&nbsp;</a></span></li>
+      <li><span><a href="celebrate.html">Celebrate /&nbsp;</a></span></li>
+      <li><span><a href="host.html">Host /&nbsp;</a></span></li>
+      <li><span><a href="contact.html">Contact Us</a></span></li>
+    </ul>
+  </nav>
+  <!-- ~ -->
+
+  <article class="content font-green helper-outline">
+
+    <!-- OLD LANDING PAGE -->
+    <!-- <div id="recipe-img0"></div>
+    <div id="recipe-img1"></div>
+    <div id="recipe-img2"></div>
+    <div id="recipe-title" class="font-green"></div>
+
+    <div class="ingredients">
+      <p class="font-green">Ingredients</p>
+      <div id="recipe-ingredients"></div>
+    </div>
+
+    <div class="directions">
+      <p class="font-green">Directions</p>
+      <div id="recipe-directions"></div>
+    </div> -->
+
+    <ul class="menu-nav nav-one">
+      <li class="helper-outline">
+        <a href="about.html">
+          <div class="superscript">01</div>
+          <div><h1><span>About</span></h1></div>
+        </a>
+      </li>
+      <li class="helper-outline">
+        <a href="http://onceuponatable.oddle.me/">
+          <div class="superscript">02</div>
+          <div><h1><span>Shop</span></h1></div>
+        </a>
+      </li>
+      <li class="helper-outline">
+        <a href="celebrate.html">
+          <div class="superscript">03</div>
+          <div><h1><span>Celebrate</span></h1></div>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="menu-nav nav-two">
+      <li class="helper-outline">
+        <a href="host.html">
+          <div class="superscript">04</div>
+          <div><h1><span>Host</span></h1></div>
+        </a>
+      </li>
+      <li class="helper-outline">
+        <a href="contact.html">
+          <div class="superscript">05</div>
+          <div><h1><span>Contact Us</span></h1></div>
+        </a>
+      </li>
+      <li class="helper-outline"></li>
+    </ul>
+
+  </article>
+
+  <footer class="copyright helper-outline">
+    <p>Copyright © 2017 Once Upon A Table</p>
+  </footer>
+
+</div>
+
+  <!-- JS Links -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
+    var recipes = [
+      {title: 'Ultimate Chocolate Chip Cookies',
+      ingredients: '3/4<br /> cup granulated sugar<br /> 3/4<br /> cup packed brown sugar<br /> 1<br /> cup butter or margarine, softened<br /> 1<br /> teaspoon vanilla<br /> 1<br /> egg<br /> 2 1/4<br /> cups Gold Medal™ all-purpose flour<br /> 1<br /> teaspoon baking soda<br /> 1/2<br /> teaspoon salt<br /> 1<br /> cup coarsely chopped nuts<br /> 1<br /> package (12 ounces) semisweet chocolate chips (2 cups)',
+      directions: '1 Heat oven to 375ºF.<br /> 2 Mix sugars, butter, vanilla and egg in large bowl. Stir in flour, baking soda and salt (dough will be stiff ). Stir in nuts and chocolate chips.<br /> 3 Drop dough by rounded table spoonfuls about 2 inches apart onto ungreased cookie sheet.<br /> 4 Bake 8 to 10 minutes or until light brown (centers will be soft). Cool slightly; remove from cookie sheet. Cool on wire rack.',
+      images: ['Assets/Index/recipe_0_0.jpg', 'Assets/Index/recipe_0_1.jpg', 'Assets/Index/recipe_0_2.jpg']},
+
+      {title: 'Recipe 2',
+      ingredients: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut temporibus dolorum soluta veniam ea dignissimos at, porro praesentium animi doloribus, magni vel veritatis possimus fuga? Doloribus maxime recusandae velit, autem. <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis provident esse, dignissimos. Officia deserunt enim dignissimos ipsa omnis numquam perspiciatis cum saepe ipsum sequi voluptas doloribus, eum expedita, a modi. ',
+      directions: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut temporibus dolorum soluta veniam ea dignissimos at, porro praesentium animi doloribus, magni vel veritatis possimus fuga? Doloribus maxime recusandae velit, autem. <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis provident esse, dignissimos. Officia deserunt enim dignissimos ipsa omnis numquam perspiciatis cum saepe ipsum sequi voluptas doloribus, eum expedita, a modi.',
+      images: ['Assets/Index/recipe_1_0.jpg', 'Assets/Index/recipe_1_1.jpg', 'Assets/Index/recipe_1_2.jpg']},
+
+      {title: 'Recipe 3',
+      ingredients: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut temporibus dolorum soluta veniam ea dignissimos at, porro praesentium animi doloribus, magni vel veritatis possimus fuga? Doloribus maxime recusandae velit, autem. <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis provident esse, dignissimos. Officia deserunt enim dignissimos ipsa omnis numquam perspiciatis cum saepe ipsum sequi voluptas doloribus, eum expedita, a modi. ',
+      directions: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut temporibus dolorum soluta veniam ea dignissimos at, porro praesentium animi doloribus, magni vel veritatis possimus fuga? Doloribus maxime recusandae velit, autem. <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis provident esse, dignissimos. Officia deserunt enim dignissimos ipsa omnis numquam perspiciatis cum saepe ipsum sequi voluptas doloribus, eum expedita, a modi. ',
+      images: ['Assets/Index/recipe_2_0.jpg', 'Assets/Index/recipe_2_1.jpg', 'Assets/Index/recipe_2_2.jpg']}
+    ]
+
+    $(function() {
+      var i = Math.floor((Math.random() * 3));
+      $('#recipe-title').append(recipes[i].title)
+      $('#recipe-ingredients').append(recipes[i].ingredients)
+      $('#recipe-directions').append(recipes[i].directions)
+      $('#recipe-img0').append('<img src="' + recipes[i].images[0] + '" />')
+      $('#recipe-img1').append('<img src="' + recipes[i].images[1] + '" />')
+      $('#recipe-img2').append('<img src="' + recipes[i].images[2] + '" />')
+    });
+  </script>
+  <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

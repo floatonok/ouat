@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Once upon a Table</title>
+
+  <!-- Mobile Responsive View -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
+</head>
+
+<body class="gallery" id="gift-background">
+
+<div class="container">
+  <header class="main-head helper-outline">
+    <a href="index.html"><img src="Assets/OuatLogo.png" class="logo" /></a>
+  </header>
+
+  <nav class="social-nav helper-outline">
+    <ul>
+      <li><span><a href="http://onceuponatable.oddle.me/">Shop&nbsp;/&nbsp;</a></span></li>
+      <li><span><a href="">Fb&nbsp;/&nbsp;</a></span></li>
+      <li><span><a href="">Ig&nbsp;/&nbsp;</a></span></li>
+      <li><span><a href="">E</a></span></li>
+    </ul>
+  </nav>
+
+  <nav class="prev-next helper-outline">
+    <ul>
+      <li><span><a href="celebrate.html">Previous - Celebrate</li></a>
+    </ul>
+  </nav>
+
+  <nav class="current-page helper-outline">
+    <ul>
+      <li><span><a href="celebrate-cakes.html">Cakes > &nbsp;</a></span></li>
+      <li><span><a href="celebrate-favours.html">Favours > &nbsp;</a></span></li>
+      <li><span><a href="celebrate-dessert.html">Dessert Tables > &nbsp;</a></span></li>
+      <li><strong>Gift Boxes</strong></li>
+    </ul>
+  </nav>
+
+  <aside class="menu helper-outline">
+    <span><a href="menu.html" class="underline">Menu</a></span>
+  </aside>
+
+  <!-- Only visible in mobile layout -->
+  <nav class="mobile-menu helper-outline">
+    <ul>
+      <li><span><a href="about.html">About Us /</a></span></li>
+      <li><span><a href="http://onceuponatable.oddle.me/">Shop /</a></span></li>
+      <li><span><a href="celebrate.html">Celebrate /</a></span></li>
+      <li><span><a href="host.html">Host /</a></span></li>
+      <li><span><a href="contact.html">Contact Us</a></span></li>
+    </ul>
+  </nav>
+  <!-- ~ -->
+
+  <div class="page-title helper-outline">
+    <div class="superscript">03</div>
+    <div>.</div>
+    <div><h1>Celebrate - Gift Boxes</h1></div>
+  </div>
+
+  <article class="content helper-outline">
+    <div id="counter"></div>
+    <div class="gallery-nav helper-outline">
+      <div class="title"><h3>Gift Boxes</h3></div>
+      <div class="next cursor-point" onclick="nextImage()"><span>Next ></span></div><br />
+      <div class="previous cursor-point" onclick="previousImage()"><span>< Previous</span></div>
+    </div>
+  </article>
+
+  <footer class="copyright helper-outline">
+    <p>Copyright © 2017 Once Upon A Table</p>
+  </footer>
+
+</div>
+
+  <!-- JS Links -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
+    var celebrateGift = ['Assets/Celebrate/gift_0.jpg', 'Assets/Celebrate/gift_1.jpg', 'Assets/Celebrate/gift_2.jpg', 'Assets/Celebrate/gift_3.jpg', 'Assets/Celebrate/gift_4.jpg', 'Assets/Celebrate/gift_5.jpg']
+    var index = 0
+
+    function pad (n) {
+      return (n < 10) ? ("0" + n) : n;
+    }
+
+    $('#counter').append(pad(index + 1) + ' / ' + pad(celebrateGift.length))
+
+    function nextImage () {
+      if (index < celebrateGift.length - 1) {
+        index++
+      } else {
+        index = 0
+      }
+      $('#gift-background').css('background-image', 'url(' + celebrateGift[index] + ')' );
+      $('#counter').empty()
+      $('#counter').append(pad(index + 1) + ' / ' + pad(celebrateGift.length))
+    }
+
+    function previousImage () {
+      if (index === 0) {
+        index = celebrateGift.length - 1
+      } else {
+        index--
+      }
+      $('#gift-background').css('background-image', 'url(' + celebrateGift[index] + ')' );
+      $('#counter').empty()
+      $('#counter').append(pad(index + 1) + ' / ' + pad(celebrateGift.length))
+    }
+
+    $("body").keydown(function(e) {
+      if(e.keyCode == 37) {
+        previousImage()
+      } else if (e.keyCode == 39) {
+        nextImage()
+      }
+    })
+
+  </script>
+
+  <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>
