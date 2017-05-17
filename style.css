@@ -157,7 +157,7 @@ nav ul {
   display: flex;
 }
 
-/*span {
+span {
   position: relative;
   display: block;
   cursor: pointer;
@@ -192,13 +192,13 @@ span:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
-}*/
+}
 
-/*@media (max-width: 920px) {
+@media (max-width: 920px) {
    span:hover{
-      display: ;
+      background: none;
    }
-}*/
+}
 
 .menu-overlay span:before, .menu-overlay span:after, .menu-overlay span:hover:before {
 	background: #ffdede;
