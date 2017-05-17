@@ -51,13 +51,6 @@ table {
 
 /* === CSS GRID SETUP === */
 
-/*@-ms-viewport {
-  width: device-width;
-	height: device-height;
-	user-scalable: yes;
-	initial-scale: 1;
-}*/
-
 /* — Grid Area — */
 .main-head {
   grid-area: main-head;
@@ -680,8 +673,16 @@ body.gallery {
 }
 
 .gallery .content {
-	height: 60vh;
+	height: 50vh;
 	position: relative;
+}
+
+.gallery .page-title {
+	padding-top: 20px;
+}
+
+.gallery .current-page {
+	line-height: 120%;
 }
 
 .title {
@@ -697,6 +698,15 @@ body.gallery {
 .gallery-nav {
 	position: absolute;
 	bottom: 0;
+}
+
+#counter {
+	padding-top: 20px;
+	justify-self: end;
+	font-size: 10pt;
+	display: flex;
+	flex-direction: row;
+	height: 30px;
 }
 
 /* - 960px: 2 Columns - */
@@ -723,13 +733,6 @@ body.gallery {
 		display: block;
 	}
 
-	#counter {
-		padding-top: 20px;
-		justify-self: end;
-		font-size: 10pt;
-		display: flex;
-		height: 30px;
-	}
 	.gallery-nav {
 		grid-column: 1 / span 1;
 		position: static;
