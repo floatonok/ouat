@@ -195,7 +195,7 @@ span:hover:after {
 }
 
 @media (max-width: 920px) {
-   span:hover{
+   span:hover, span:active, span:before, span:after, span:hover:before, span:hover:after {
       background: none;
    }
 }
