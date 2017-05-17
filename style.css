@@ -157,47 +157,43 @@ nav ul {
   display: flex;
 }
 
-span {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
+@media (min-width: 920px) {
+	span {
+	  position: relative;
+	  display: block;
+	  cursor: pointer;
+	}
 
-span:before, span:after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  top: 50%;
-  margin-top: -0.5px;
-  background: #004f42;
-}
+	span:before, span:after {
+	  content: '';
+	  position: absolute;
+	  width: 0%;
+	  height: 2px;
+	  top: 50%;
+	  margin-top: -0.5px;
+	  background: #004f42;
+	}
 
-span:before {
-  left: -2.5px;
-}
-span:after {
-  right: 2.5px;
-  background: #004f42;
-  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
+	span:before {
+	  left: -2.5px;
+	}
+	span:after {
+	  right: 2.5px;
+	  background: #004f42;
+	  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+	}
 
-span:hover:before {
-  background: #004f42;
-  width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
+	span:hover:before {
+	  background: #004f42;
+	  width: 100%;
+	  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+	}
 
-span:hover:after {
-  background: transparent;
-  width: 100%;
-  transition: 0s;
-}
-
-@media (max-width: 920px) {
-   span:hover, span:active, span:before, span:after, span:hover:before, span:hover:after {
-      background: none;
-   }
+	span:hover:after {
+	  background: transparent;
+	  width: 100%;
+	  transition: 0s;
+	}
 }
 
 .menu-overlay span:before, .menu-overlay span:after, .menu-overlay span:hover:before {
