@@ -157,7 +157,7 @@ nav ul {
   display: flex;
 }
 
-span {
+/*span {
   position: relative;
   display: block;
   cursor: pointer;
@@ -182,17 +182,17 @@ span:after {
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:before, span:focus:before {
+span:hover:before {
   background: #004f42;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:after, span:focus:after {
+span:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
-}
+}*/
 
 /*@media (max-width: 920px) {
    span:hover{
