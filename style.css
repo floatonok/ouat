@@ -474,8 +474,11 @@ body.menu-overlay {
 /* - 1426px: 6 Columns - */
 @media (min-width: 1200px) {
 	body.index {
-		background-image: url('Assets/Index/index_0.jpg');
 		background-size: cover;
+	}
+
+	#landing-background {
+		/*background-image: url('Assets/Index/index_0.jpg');*/
 	}
 }
 
@@ -709,6 +712,10 @@ body.gallery {
 	height: 30px;
 }
 
+.gallery-description {
+	display: none;
+}
+
 /* - 960px: 2 Columns - */
 @media (min-width: 600px) {
 	.gallery .content {
@@ -717,6 +724,10 @@ body.gallery {
 
 	.gallery-nav {
 		position: static;
+	}
+
+	.gallery-description {
+		display: block;
 	}
 }
 
@@ -735,6 +746,7 @@ body.gallery {
 
 	.gallery-description {
 		grid-column: 1 / span 1;
+		width: 95%;
 	}
 
 	.title {
