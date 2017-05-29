@@ -283,7 +283,7 @@ nav ul {
 
 .logo {
 	justify-self: center;
-  margin-top: 62px;
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -673,7 +673,7 @@ body.gallery {
 }
 
 .gallery .content {
-	height: 50vh;
+	height: 55vh;
 	position: relative;
 }
 
