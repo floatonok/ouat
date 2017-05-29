@@ -495,7 +495,7 @@ body.menu-overlay {
 		display: grid;
 		grid-column-gap: 20px;
 		grid-template-columns: 1fr 1fr 3fr;
-		grid-template-rows: auto 160vh;
+		grid-template-rows: auto 140vh;
 	}
 
 	.aboutus {
