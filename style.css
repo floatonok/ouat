@@ -712,7 +712,7 @@ body.gallery {
 /* - 960px: 2 Columns - */
 @media (min-width: 600px) {
 	.gallery .content {
-		height: 85vh;
+		height: 75vh;
 	}
 
 	.gallery-nav {
@@ -729,13 +729,20 @@ body.gallery {
 		position: static;
 	}
 
+	#counter {
+		grid-column: 1 / span 1;
+	}
+
+	.gallery-description {
+		grid-column: 1 / span 1;
+	}
+
 	.title {
 		display: block;
 	}
 
 	.gallery-nav {
 		grid-column: 1 / span 1;
-		position: static;
 	}
 
 	.title {
